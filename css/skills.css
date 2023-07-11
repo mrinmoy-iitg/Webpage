@@ -5,15 +5,15 @@ For laptop screens
 {
 	.skills_tile{
 		position: relative;
-		width: 100%;
+		width: 50%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		font-size: 1.2vw;
+		font-size: 20px;
 	}
 	.skill_grade{
 		position: relative;
-		width: 100%;
+		width: 90%;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -21,17 +21,17 @@ For laptop screens
 	}
 	.label{
 		position: relative;
-		width: 25%;
-		font-size: 1.2vw;
+		width: 30%;
+		font-size: 18px;
 		text-align: center;
 	}
 	.container {
 		position: relative;
-		width: 70%;
+		width: 60%;
 		background-color: #acadad;
 		border-radius: 5px;
 		box-shadow: 3px 3px 3px 3px #ddd;
-		margin-bottom: 2%;
+		margin-bottom: 1%;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -39,7 +39,7 @@ For laptop screens
 	.skill_bar{
 		text-align: right;
 		color: white;
-		font-size: 1.2vw;
+		font-size: 16px;
 		padding: 0 2% 0 0;
 		border-radius: 5px;
 		display: inline-block;

@@ -8,7 +8,7 @@ For laptop screens
 		padding: 0;
 		border: 0;
 		outline: 0;
-		font-size: 1.3vw;
+		font-size: 18px;
 		vertical-align: baseline;
 		background: transparent;
 	}
@@ -19,6 +19,7 @@ For laptop screens
 		justify-content: space-between;
 		position: relative;
 		margin: auto;
+		width: 80vw;
 		min-height: 100vh;
 		text-align: justify;
 		font-family: "Titillium Web"; /* "Calibri", sans-serif;*/
@@ -68,10 +69,10 @@ For laptop screens
 	}
 	.menu_pane{
 		position: fixed;
-		width: 85%;
+		width: 80vw;
 		margin: auto;
-		padding-top: 1%;
-		height: 7%;
+		padding-top: 1vw;
+		height: 5vw;
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
@@ -80,9 +81,10 @@ For laptop screens
 		z-index: 1;
 	}
 	.menu_items{
+		position: relative;
 		display: flex;
 		align-items: center;
-		height: 35px;
+		height: 40%;
 		font-weight: 500;
 		border-bottom: 5px solid transparent;
 		padding-left:10px;
@@ -107,18 +109,19 @@ For laptop screens
 		border-bottom: 5px solid transparent;
 	}
 	.first_name{
-		font-size: 1.5vw;
+		font-size: 24px;
 		color: rgba(54, 56, 55, 1);
 		font-weight: 900;
 	}
 	.last_name{
-		font-size: 1.5vw;
+		font-size: 24px;
 		color: gray;
 	}
 	.hyperlink{
 		cursor: pointer;
 	}
 	.title_label{
+		position: relative;
 		width: 95%;
 	}
 	.dashboard{
@@ -158,7 +161,7 @@ For laptop screens
 		width: 100%;
 		text-align: left;
 		font-weight: 900;
-		font-size: 1.2vw;
+		font-size: 16px;
 		margin: 0px 0px 20px 0px;
 	}
 	.highlight_text{
@@ -179,7 +182,7 @@ For laptop screens
 		justify-content: space-around;
 	}
 	.page_heading{
-		font-size: 2.5vw;
+		font-size: 30px;
 		text-align: center;
 		margin: 10px 0px 10px 0px;
 	}
@@ -187,7 +190,8 @@ For laptop screens
 		position: relative;
 		width: 100%;
 		margin: 20px 0px 0px 0px;
-		font-size: 2vw;
+		font-size: 24px;
+		font-weight: 900;
 		text-align: left;
 		padding: 5px 0 5px 0;
 	}
@@ -206,13 +210,13 @@ For laptop screens
 	}
 	.footer_text{
 		font-weight: 500;
-		font-size: 1vw;
+		font-size: 18px;
 	}
 	.no_link_deco{
 		text-decoration: none;
 		background-color: black; /* rgba(54, 56, 55, 1);*/
 		color: gray;
-		font-size: 1vw;
+		font-size: 18px;
 	}
 	.logo{
 		position: relative;
@@ -263,7 +267,7 @@ For laptop screens
 		text-decoration: none;
 		color: rgb(94, 158, 74);
 		font-weight: 900;
-		font-size: 1vw;
+		font-size: 18px;
 	}
 	.news{
 		position: relative;
@@ -306,7 +310,7 @@ For laptop screens
 		font-style: italic;
 		font-weight: 500;
 		text-align: center;
-		font-size: 1.5vw;
+		font-size: 24px;
 	}
 }
 
