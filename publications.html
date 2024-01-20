@@ -84,9 +84,58 @@
 			<p class="page_heading">Chronological list of publications</p>
 			<hr style="width:100%;color: rgba(54, 56, 55, 0.5);">
 
+
+			<!-- 2024 -->
+			<p class="page_subheading">2024
+			<div class="year_wise_content">
+
+				<div class="flex_col_group">
+					<div class="publication_record">
+						<div class="info_div">
+							<p class="title">Contextual Biasing Methods for Improving Rare Word Detection in Automatic Speech Recognition</p>
+							<p class="other_authors"><span class="authors">Mrinmoy Bhattacharjee</span>, Iuliia Nigmatulina, Amrutha Prasad, Pradeep Rangappa, Srikanth Madikeri, Petr Motlicek, Hartmut Helmke, Matthias Kleinert</p>
+							<p class="proceedings">49<sup>th</sup> IEEE International Conference on Acoustics, Speech, & Signal Processing (ICASSP)</p>
+							<span> 
+							<span id="abstract_launcher_icassp2024" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
+							<span><a href="" target="_blank" class="html_button hyperlink">[HTML]</a></span>
+							<span><a href="" target="_blank" class="pdf_button hyperlink">[PDF]</a></span>
+							</span>
+							<span id="bibtex_launcher_icassp2024" onclick="show_bibtex(this.id)" class="bibtex_button hyperlink">[+Bibtex]</span>
+							</span>
+						</div>
+						<div class="paper_fig"><img src="images/research_fig/System_Block_Diagram.png" class="fig_dimensions"/></div>
+					</div>
+					<div class="abstract_div" id="icassp2024"><b>In specialized domains like Air Traffic Control (ATC), a notable challenge in porting a deployed Automatic Speech Recognition (ASR) system from one airport to another is the alteration in the set of crucial words that must be accurately detected in the new environment. Typically, such words have limited occurrences in training data, making it impractical to retrain the ASR system. This paper explores innovative word-boosting techniques to improve the detection rate of such rare words in the ASR hypotheses for the ATC domain. Two acoustic models are investigated: a hybrid CNN-TDNNF model trained from scratch and a pre-trained wav2vec2-based XLSR model fine-tuned on a common ATC dataset. The word boosting is done in three ways. First, an out-of-vocabulary word addition method is explored. Second, G-boosting is explored, which amends the language model before building the decoding graph. Third, the boosting is performed on the fly during decoding using lattice re-scoring. The results indicate that the G-boosting method performs best and provides an approximately 30-43% relative improvement in recall of the boosted words. Moreover, a relative improvement of up to 48% is obtained upon combining G-boosting and lattice-rescoring.</div>
+					<div class="bibtex_div" id="bibtex_icassp2024">@inproceedings{Bhattacharjee_ICASSP_2024,author={Bhattacharjee, Mrinmoy and Iuliia, Nigmatulina and Prasad, Amrutha and Rangappa, Pradeep and Madikeri, Srikanth and Motlicek, Petr and Helmke, Hartmut and Kleinert, Matthias},title={Contextual Biasing Methods for Improving Rare Word Detection in Automatic Speech Recognition},booktitle={Proc. 49th IEEE Int. Conf. on Acoustics, Speech, & Signal Process. (ICASSP)},projects={Idiap},month={Apr},year={2024},location={Seoul, Korea},}
+</div>
+				</div>
+			</div>
+
 			<!-- 2023 -->
 			<p class="page_subheading">2023
 			<div class="year_wise_content">
+
+				<div class="flex_col_group">
+					<div class="publication_record">
+						<div class="info_div">
+							<p class="title">Customization of Automatic Speech Recognition Engines for Rare Word Detection Without Costly Model Re-Training</p>
+							<p class="other_authors"><span class="authors">Mrinmoy Bhattacharjee</span>, Petr Motlicek, Iuliia Nigmatulina, Helmke Hartmut, Ohneiser Oliver, Kleinert Matthias, Ehr Heiko</p>
+							<p class="proceedings">13<sup>th</sup> SESAR Innovation Days 2023</p>
+							<span> 
+							<span id="abstract_launcher_sid2023" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
+							<span><a href="https://elib.dlr.de/199971/" target="_blank" class="html_button hyperlink">[HTML]</a></span>
+							<span><a href="https://publications.idiap.ch/attachments/papers/2023/Bhattacharjee_SID_2023.pdf" target="_blank" class="pdf_button hyperlink">[PDF]</a></span>
+							</span>
+							<span id="bibtex_launcher_sid2023" onclick="show_bibtex(this.id)" class="bibtex_button hyperlink">[+Bibtex]</span>
+							</span>
+						</div>
+						<div class="paper_fig"><img src="images/research_fig/G_FST_diagram.png" class="fig_dimensions"/></div>
+					</div>
+					<div class="abstract_div" id="sid2023"><b>Thanks to Alexa, Siri or Google Assistant automatic speech recognition (ASR) has changed our daily life during the last decade. Prototypic applications in the air traffic management (ATM) domain are available. Recently pre-filling radar label entries by ASR support has reached the technology readiness level before industrialization (TRL6). However, seldom spoken and airspace related words relevant in the ATM context remain a challenge for sophisticated applications. Open-source ASR toolkits or large pre-trained models for experts – allowing to tailor ASR to new domains – can be exploited with a typical constraint on availability of certain amount of domain specific training data, i.e., typically transcribed speech for adapting acoustic and/or language models. In general, it is sufficient for a “universal” ASR engine to reliably recognize a few hundred words that form the vocabulary of the voice communications between air traffic controllers and pilots. However, for each airport some hundred dependent words that are seldom spoken need to be integrated. These challenging word entities comprise special airline designators and waypoint names like “dexon” or “burok”, which only appear in a specific region. When used, they are highly informative and thus require high recognition accuracies. Allowing plug and play customization with a minimum expert manipulation assumes that no additional training is required, i.e., fine-tuning the universal ASR. This paper presents an innovative approach to automatically integrate new specific word entities to the universal ASR system. The recognition rate of these region-specific word entities with respect to the universal ASR increases by a factor of 6.</div>
+					<div class="bibtex_div" id="bibtex_sid2023">@article{bhattacharjee2023customization,author={Bhattacharjee, Mrinmoy and Motlicek, Petr and Nigmatulina, Iuliia and Helmke, Hartmut and Ohneiser, Oliver and Kleinert, Matthias and Ehr, Heiko},title={Customization of Automatic Speech Recognition Engines for Rare Word Detection Without Costly Model Re-Training},journal={13th SESAR Innovation Days},year={2023}}</div>
+					
+				</div>
+
 			
 				<div class="flex_col_group">
 					<div class="publication_record">
@@ -96,7 +145,7 @@
 							<p class="proceedings">25<sup>th</sup> International Conference on Speech and Computer</p>
 							<span> 
 							<span id="abstract_launcher_specomdriverspeech" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
-							<span><a href="" target="_blank" class="html_button hyperlink">[HTML]</a></span>
+							<span><a href="https://link.springer.com/chapter/10.1007/978-3-031-48309-7_16" target="_blank" class="html_button hyperlink">[HTML]</a></span>
 							<span><a href="" target="_blank" class="pdf_button hyperlink">[PDF]</a></span>
 							</span>
 							<span id="bibtex_launcher_specomdriverspeech" onclick="show_bibtex(this.id)" class="bibtex_button hyperlink">[+Bibtex]</span>
@@ -105,7 +154,7 @@
 						<div class="paper_fig"><img src="images/research_fig/SPECOM_Driver_Speech.png" class="fig_dimensions"/></div>
 					</div>
 					<div class="abstract_div" id="specomdriverspeech"><b>Abstract:</b> Developing high-quality artificial intelligence based driver assistance systems is an active research area. One critical challenge is developing efficient methods to detect a driver speaking while driving. The availability of such methods would be vital in implementing safety features like blocking phone calls during driving, stress management of drivers, and other voice-based assistance applications. The present work tackles the While-Driving Speech (WDS) detection problem and makes three principal contributions. The first contribution is the creation of a manually annotated speech dataset curated from car review videos that consist of actual (non-acted) WDS data. Secondly, this work analyzes the effect of cognitively overloaded situations like driving on the prosodic characteristics of speech. Lastly, benchmark performances on the newly created dataset using standard speech classification approaches in detecting WDS are reported. This work is expected to spark interest in the community to explore this problem and develop more creative solutions.</div>
-					<div class="bibtex_div" id="bibtex_specomdriverspeech"></div>
+					<div class="bibtex_div" id="bibtex_specomdriverspeech">@inproceedings{bhattacharjee2023driver,author={Bhattacharjee, Mrinmoy and Baghel, Shikha and Prasanna, SR Mahadeva},title={{Driver Speech Detection in Real Driving Scenario}},booktitle={Proc. Int. Conf. on Speech and Computer},pages={189-199},year={2023},organization={Springer}}</div>
 					
 				</div>
 
@@ -117,7 +166,7 @@
 							<p class="proceedings">25<sup>th</sup> International Conference on Speech and Computer</p>
 							<span> 
 							<span id="abstract_launcher_specomimsvchallenge" onclick="show_abstract(this.id)" class="abstract_button hyperlink">[+Abs]</span>
-							<span><a href="" target="_blank" class="html_button hyperlink">[HTML]</a></span>
+							<span><a href="https://link.springer.com/chapter/10.1007/978-3-031-48312-7_35" target="_blank" class="html_button hyperlink">[HTML]</a></span>
 							<span><a href="" target="_blank" class="pdf_button hyperlink">[PDF]</a></span>
 							</span>
 							<span id="bibtex_launcher_specomimsvchallenge" onclick="show_bibtex(this.id)" class="bibtex_button hyperlink">[+Bibtex]</span>
@@ -126,7 +175,7 @@
 						<div class="paper_fig"><img src="images/research_fig/SPECOM_IMSV_Challenge.png" class="fig_dimensions"/></div>
 					</div>
 					<div class="abstract_div" id="specomimsvchallenge"><b>Abstract:</b> Speaker Verification (SV) is a task to verify the claimed identity of the claimant using his/her voice sample. Though there exists an ample amount of research in SV technologies, the development concerning a multilingual conversation is limited. In a country like India, almost all the speakers are polyglot in nature. Consequently, the development of a Multilingual SV (MSV) system on the data collected in the Indian scenario is more challenging. With this motivation, the Indic-Multilingual Speaker Verification (I-MSV) Challenge 2022 was designed to understand and compare the state-of-the-art SV techniques. An overview of the challenge and its outcomes is given here. For the challenge, approximately 100 hours of data spoken by 100 speakers were collected using 5 different sensors in 13 Indian languages. The data is divided into development, training, and testing sets and has been made publicly available for further research. The goal of this challenge is to make the SV system robust to language and sensor variations between enrollment and testing. In the challenge, participants were asked to develop the SV system in two scenarios, viz. constrained and unconstrained. The best system in the constrained and unconstrained scenario achieved a performance of 2.12% and 0.26% in terms of Equal Error Rate (EER), respectively.</div>
-					<div class="bibtex_div" id="bibtex_specomimsvchallenge"></div>
+					<div class="bibtex_div" id="bibtex_specomimsvchallenge">@inproceedings{mishra2023msv,author={Mishra, Jagabandhu and Bhattacharjee, Mrinmoy and Prasanna, SR Mahadeva},title={{I-MSV 2022: Indic-Multilingual and Multi-sensor Speaker Verification Challenge}},booktitle={Proc. Int. Conf. on Speech and Computer},pages={437-445},year={2023},organization={Springer}}</div>
 					
 				</div>
 			
@@ -189,7 +238,7 @@
 							<span id="bibtex_launcher_SPECOM22" onclick="show_bibtex(this.id)" class="bibtex_button hyperlink">[+Bibtex]</span>
 							</span>
 						</div>
-						<div class="paper_fig"><img src="images/research_fig/dummy_paper_fig.png" class="fig_dimensions"/></div>
+						<div class="paper_fig"><img src="images/research_fig/MelSPT_color.png" class="fig_dimensions"/></div>
 					</div>
 					<div class="abstract_div" id="SPECOM22"><b>Abstract:</b> Speech-music overlap detection in audio signals is an essential preprocessing step for many high-level audio processing applications. Speech and music spectrograms exhibit characteristic harmonic striations that can be used as a feature for detecting their overlap. Hence, this work proposes two features generated using a spectral peak tracking algorithm to capture prominent harmonic patterns in spectrograms. One feature consists of the spectral peak amplitude evolutions in an audio interval. The second feature is designed as a Mel-scaled spectrogram obtained by suppressing non-peak spectral components. In addition, a one-dimensional convolutional neural network architecture is proposed to learn the temporal evolution of spectral peaks. Mel-spectrogram is used as a baseline feature to compare performances. A popular public dataset MUSAN with 102 h of data has been used to perform experiments. A late fusion of the proposed features with baseline is observed to provide better performance.</div>
 					<div class="bibtex_div" id="bibtex_SPECOM22">@inproceedings{10.1007/978-3-031-20980-2_8,<br/>&nbsp;&nbsp;&nbsp;&nbsp;author={Bhattacharjee, Mrinmoy and Prasanna, S. R. Mahadeva and Guha, Prithwijit},<br/>&nbsp;&nbsp;&nbsp;&nbsp;title={Speech Music Overlap Detection Using Spectral Peak Evolutions},<br/>&nbsp;&nbsp;&nbsp;&nbsp;booktitle={Speech and Computer},<br/>&nbsp;&nbsp;&nbsp;&nbsp;year={2022},<br/>&nbsp;&nbsp;&nbsp;&nbsp;publisher={Springer International Publishing},<br/>&nbsp;&nbsp;&nbsp;&nbsp;address={Cham},<br/>&nbsp;&nbsp;&nbsp;&nbsp;pages={75-86},<br/>&nbsp;&nbsp;&nbsp;&nbsp;isbn={978-3-031-20980-2},<br/>}</div>
@@ -227,7 +276,7 @@
 							<span id="bibtex_launcher_9806808" onclick="show_bibtex(this.id)" class="bibtex_button hyperlink">[+Bibtex]</span>
 							</span>
 						</div>
-						<div class="paper_fig"><img src="images/research_fig/dummy_paper_fig.png"/></div>
+						<div class="paper_fig"><img src="images/research_fig/LSTM architecture.png" class="fig_dimensions"/></div>
 					</div>
 					<div class="abstract_div" id="9806808"><b>Abstract:</b> This paper presents an automatic dialect identification system in Ao using a deep Convolutional Neural Network with residual connections. Ao is an under-resourced language belonging to the Tibeto-Burman family in the North-East of India. The three distinct dialects of the language are Chungli, Mongsen and Changki. Ao is a tone language and consists of three tones, viz., high, mid, and low. The recognition of tones is said to be influenced by the production process as well as human perception. In this work, the Mean Hilbert Envelope Coefficients (MHEC) feature is explored to identify the three dialects of Ao as this feature is reported to have information of human auditory nerve responses. Mel Frequency Cepstral Coefficients (MFCC) feature is used as the baseline. In addition, the effect of noise in the dialect identification task at various signal-to-noise ratio scenarios is studied. The experiments show that the MHEC feature provides an improvement of almost 10% average F1-score at high noise cases.</div>
 					<div class="bibtex_div" id="bibtex_9806808">@inproceedings{9806808,<br/>&nbsp;&nbsp;&nbsp;&nbsp;author={Tzudir, Moakala and Bhattacharjee, Mrinmoy and Sarmah, Priyankoo and Prasanna, S. R. M.},<br/>&nbsp;&nbsp;&nbsp;&nbsp;booktitle={2022 National Conference on Communications (NCC)},<br/>&nbsp;&nbsp;&nbsp;&nbsp;title={Low-Resource Dialect Identification in Ao Using Noise Robust Mean Hilbert Envelope Coefficients},<br/>&nbsp;&nbsp;&nbsp;&nbsp;year={2022},<br/>&nbsp;&nbsp;&nbsp;&nbsp;volume={},<br/>&nbsp;&nbsp;&nbsp;&nbsp;number={},<br/>&nbsp;&nbsp;&nbsp;&nbsp;pages={256-261},<br/>&nbsp;&nbsp;&nbsp;&nbsp;doi={10.1109/NCC55593.2022.9806808}<br/>}</div>
@@ -272,7 +321,7 @@
 							<span id="bibtex_launcher_9530150" onclick="show_bibtex(this.id)" class="bibtex_button hyperlink">[+Bibtex]</span>
 							</span>
 						</div>
-						<div class="paper_fig"><img src="images/research_fig/dummy_paper_fig.png" class="fig_dimensions"/></div>
+						<div class="paper_fig"><img src="images/research_fig/pyknogram.png" class="fig_dimensions"/></div>
 					</div>
 					<div class="abstract_div" id="9530150"><b>Abstract:</b> Detection of speech overlapped with music is a challenging task. This work deals with discriminating clean speech from speech overlapped with low-energy music. The overlapped signals are generated synthetically. An enhanced spectrogram representation called Pyknogram has been explored for the current task. Pyknograms have been previously used in overlapped speech detection. The classification is performed using a neural network that is designed with only convolutional layers. The performance of Pyknograms at various high SNR levels is compared with that of discrete fourier transform based spectrograms. The classification system is benchmarked on three publicly available datasets, viz., GTZAN, Scheirer-slaney and MUSAN. The Pyknogram representation with the fully convolutional classifier performs well, both individually and in combination with spectrograms.</div>
 					<div class="bibtex_div" id="bibtex_9530150">@inproceedings{9530150,<br/>&nbsp;&nbsp;&nbsp;&nbsp;author={Bhattacharjee, Mrinmoy and Prasanna, S. R. Mahadeva and Guha, Prithwijit},<br/>&nbsp;&nbsp;&nbsp;&nbsp;booktitle={2021 National Conference on Communications (NCC)},<br/>&nbsp;&nbsp;&nbsp;&nbsp;title={Detection of Speech Overlapped with Low-Energy Music using Pyknograms},<br/>&nbsp;&nbsp;&nbsp;&nbsp;year={2021},<br/>&nbsp;&nbsp;&nbsp;&nbsp;volume={},<br/>&nbsp;&nbsp;&nbsp;&nbsp;number={},<br/>&nbsp;&nbsp;&nbsp;&nbsp;pages={1-6},<br/>&nbsp;&nbsp;&nbsp;&nbsp;doi={10.1109/NCC52529.2021.9530150}<br/>}</div>
@@ -317,7 +366,7 @@
 							<span id="bibtex_launcher_9179491" onclick="show_bibtex(this.id)" class="bibtex_button hyperlink">[+Bibtex]</span>
 							</span>
 						</div>
-						<div class="paper_fig"><img src="images/research_fig/dummy_paper_fig.png" class="fig_dimensions"/></div>
+						<div class="paper_fig"><img src="images/research_fig/spcom_2020.png" class="fig_dimensions"/></div>
 					</div>
 					<div class="abstract_div" id="9179491"><b>Abstract:</b> Applications that perform enhancement of speech containing background music require a critical preprocessing step that can efficiently detect such segments. This work proposes such a preprocessing method to detect speech with background music that is mixed at different SNR levels. A bag-of-words approach is proposed in this work. Representative dictionaries from speech and music data are first learned. The signals are processed as spectrograms of 1s intervals. Rows of these spectrograms are used to learn separate speech and music dictionaries. This work proposes a weighting scheme to reduce confusion by suppressing codewords of one class that have similarities to the other class. The proposed feature is a weighted histogram of 1s audio intervals obtained from the learned dictionaries. The classification is performed using a deep neural network classifier. The proposed approach is validated against a baseline and benchmarked over two publicly available datasets. The proposed feature shows promising results, both individually and in combination with the baseline.</div>
 					<div class="bibtex_div" id="bibtex_9179491">@inproceedings{9179491,<br/>&nbsp;&nbsp;&nbsp;&nbsp;author={Bhattacharjee, Mrinmoy and Mahadeva Prasanna, S.R. and Guha, Prithwijit},<br/>&nbsp;&nbsp;&nbsp;&nbsp;booktitle={2020 International Conference on Signal Processing and Communications (SPCOM)},<br/>&nbsp;&nbsp;&nbsp;&nbsp;title={Classification of Speech vs. Speech with Background Music},<br/>&nbsp;&nbsp;&nbsp;&nbsp;year={2020},<br/>&nbsp;&nbsp;&nbsp;&nbsp;volume={},<br/>&nbsp;&nbsp;&nbsp;&nbsp;number={},<br/>&nbsp;&nbsp;&nbsp;&nbsp;pages={1-5},<br/>&nbsp;&nbsp;&nbsp;&nbsp;doi={10.1109/SPCOM50965.2020.9179491}<br/>}</div>
@@ -342,7 +391,7 @@
 							<span id="bibtex_launcher_PReMI19" onclick="show_bibtex(this.id)" class="bibtex_button hyperlink">[+Bibtex]</span>
 							</span>
 						</div>
-						<div class="paper_fig"><img src="images/research_fig/dummy_paper_fig.png" class="fig_dimensions"/></div>
+						<div class="paper_fig"><img src="images/research_fig/1DCNN_Arch.png" class="fig_dimensions"/></div>
 					</div>
 					<div class="abstract_div" id="PReMI19"><b>Abstract:</b> Automatic shouted speech detection systems usually model its spectral characteristics to differentiate it from normal speech. Mostly hand-crafted features have been explored for shouted speech detection. However, many works on audio processing suggest that approaches based on automatic feature learning are more robust than hand-crafted feature engineering. This work re-demonstrates this notion by proposing a 1D-CNN architecture for shouted and normal speech classification task. The CNN learns features from the magnitude spectrum of speech frames. Classification is performed by fully connected layers at later stages of the network. Performance of the proposed architecture is evaluated on three datasets and validated against three existing approaches. As an additional contribution, a discussion of features learned by the CNN kernels is provided with relevant visualizations.</div>
 					<div class="bibtex_div" id="bibtex_PReMI19">@inproceedings{10.1007/978-3-030-34872-4_52,<br/>&nbsp;&nbsp;&nbsp;&nbsp;author={Baghel, Shikha and Bhattacharjee, Mrinmoy and Prasanna, S. R. M. and Guha, Prithwijit},<br/>&nbsp;&nbsp;&nbsp;&nbsp;title={Shouted and Normal Speech Classification Using 1D CNN},<br/>&nbsp;&nbsp;&nbsp;&nbsp;booktitle={Pattern Recognition and Machine Intelligence},<br/>&nbsp;&nbsp;&nbsp;&nbsp;year={2019},<br/>&nbsp;&nbsp;&nbsp;&nbsp;publisher={Springer International Publishing},<br/>&nbsp;&nbsp;&nbsp;&nbsp;address={Cham},<br/>&nbsp;&nbsp;&nbsp;&nbsp;pages={472-480},<br/>&nbsp;&nbsp;&nbsp;&nbsp;isbn={978-3-030-34872-4}<br/>}</div>
@@ -353,6 +402,7 @@
 
 
 			<!-- 2018 -->
+			<!--
 			<p class="page_subheading">2018</p>
 			<div class="year_wise_content">
 
@@ -375,6 +425,7 @@
 				</div>
 
 			</div>
+			-->
 
 
 			<!-- 2014 -->
@@ -420,11 +471,22 @@
 				<div class="footer_text">
 				</div>
 			</div>
+			
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
 			<div>
 				<div class="footer_text">
-				&#169;Copyright 2023 Mrinmoy Bhattacharjee. <br/> 
-				Hosted by &nbsp;<a href="https://pages.github.com/" target="_blank" class="no_link_deco">Github Pages</a>. <br/> 
-				Last updated: &nbsp;<b id="last_updated" class="no_link_deco"></b>
+				&#169; Copyright 2023 Mrinmoy Bhattacharjee. <br/> 
+				Hosted by &nbsp; <a href="https://pages.github.com/" target="_blank" class="no_link_deco">Github Pages</a>. <br/>
+				Last updated: &nbsp; <b id="last_updated" class="no_link_deco"></b>
 				</div>
 				<br/>
 				<div class="ext_profiles_menu">
