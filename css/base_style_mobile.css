@@ -46,6 +46,9 @@ For laptop screens
 		display:table;
 		clear:both;
 	}
+	ul{
+		list-style-position: inside;
+	}
 	.flex-container{
 		display: flex;
 		justify-content: space-around;
@@ -127,7 +130,7 @@ For laptop screens
 	.dashboard{
 		position: relative;
 		top: 5vw;
-		width: 80%;
+		width: 100%;
 		margin: auto;
 		margin-bottom: 25px;
 		min-height: 100%;
@@ -141,7 +144,7 @@ For laptop screens
 	}
 	.intro_tile{
 		position: relative;
-		width: 60%; 
+		width: 68%; 
 		text-align: justify;
 		padding: 10px;
 	}
@@ -153,7 +156,7 @@ For laptop screens
 	}
 	.profile_pic{
 		position: relative;
-		width: 35%;
+		width: 28%;
 		text-align: center;
 	}
 	.contact_details_tile{
