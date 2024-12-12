@@ -19,7 +19,7 @@ For laptop screens
 		justify-content: space-between;
 		position: relative;
 		margin: auto;
-		width: 80vw;
+		width: 99vw;
 		min-height: 100vh;
 		text-align: justify;
 		font-family: "Titillium Web"; /* "Calibri", sans-serif;*/
@@ -129,34 +129,34 @@ For laptop screens
 	}
 	.dashboard{
 		position: relative;
-		top: 5vw;
 		width: 100%;
 		margin: auto;
 		margin-bottom: 25px;
-		min-height: 100%;
-		padding-top: 2vw;
+		padding-top: 7vw;
 		padding-bottom: 3vw;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		align-items: start;
-		justify-content: space-around;
+		justify-content: center;
+		flex: 1;
 	}
 	.intro_tile{
 		position: relative;
-		width: 68%; 
+		width: 44%; 
 		text-align: justify;
-		padding: 10px;
+		padding: 25px;
 	}
 	.thesis_tile{
 		position: relative;
 		min-width: 45%; 
 		text-align: justify;
 		padding: 10px;
+		border: 1px solid black;
 	}
 	.profile_pic{
 		position: relative;
-		width: 28%;
+		width: 20%;
 		text-align: center;
 	}
 	.contact_details_tile{
@@ -199,11 +199,12 @@ For laptop screens
 		padding: 5px 0 5px 0;
 	}
 	.footer{
-		position: relative;
-		top: 5vw;
+		position: fixed;
+		top: 93vh;
+		height: 7vh;
 		width: 100%;
 		margin: auto;
-		padding-top: 25px;
+		padding-top: 5px;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -212,8 +213,15 @@ For laptop screens
 		color: gray;
 	}
 	.footer_text{
+		position: relative;
 		font-weight: 500;
 		font-size: 18px;
+		width: 70%;
+	}
+	.footer_social_media{
+		position: relative;
+		width: 20%;
+		align-items: center;
 	}
 	.no_link_deco{
 		text-decoration: none;
@@ -274,13 +282,14 @@ For laptop screens
 	}
 	.news{
 		position: relative;
-		width: 80%;
 		margin: auto;
-		margin-bottom: 25px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: space-between;
+		padding: 5px;
+		width: 60%;
+	}
+	.news_title_page{
+		box-shadow: 5px 10px #888888;
+		border-radius: 5px;
+		border: 2px solid #888888;
 	}
 	.news_item{
 		position: relative;
